@@ -1,0 +1,14 @@
+version: 2
+registries:
+  maven-github:
+    type: maven-repository
+    url: https://maven.pkg.github.com/wise-ingegneria
+    username: ${{secrets.USER_NAME}}
+    password: ${{secrets.ACCESS_TOKEN}}
+updates:
+  - package-ecosystem: "maven" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    registries:
+      - maven-github
+    schedule:
+      interval: "daily"
