@@ -1,0 +1,70 @@
+name: Vulnerabilità di Sicurezza
+description: Segnalazione di una vulnerabilità di sicurezza
+title: "[SECURITY] "
+labels: [security]
+assignees: []
+
+body:
+
+  - type: textarea
+    id: descrizione_vulnerabilita
+    attributes:
+      label: Descrizione della vulnerabilità
+      description: Una descrizione chiara e concisa della vulnerabilità di sicurezza.
+      placeholder: "Descrivi la vulnerabilità di sicurezza qui"
+
+  - type: input
+    id: package_coinvolti
+    attributes:
+      label: Package coinvolti nella vulnerabilità
+      description: Indicare il nome o i nomi dei package coinvolti nella vulnerabilità.
+      placeholder: "Nome dei package coinvolti"
+
+  - type: input
+    id: versione_vulnerabile
+    attributes:
+      label: Versione Vulnerabile
+      description: Indicare la versione del software o della libreria interessata dalla vulnerabilità.
+      placeholder: "Versione vulnerabile del software"
+
+  - type: input
+    id: versione_con_patch
+    attributes:
+      label: Versione con patch
+      description: Indicare la versione del software o della libreria che contiene la patch della vulnerabilità.
+      placeholder: "Versione con patch del software"
+
+  - type: input
+    id: link_security_alert
+    attributes:
+      label: Link a security alert del dependabot
+      description: Incollare il link del security alert generato dal dependabot, se disponibile.
+      placeholder: "Link del security alert"
+
+  - type: input
+    id: cve
+    attributes:
+      label: CVE
+      description: Se la vulnerabilità ha un numero CVE associato, inseriscilo qui.
+      placeholder: "Numero CVE"
+
+  - type: input
+    id: ghsa
+    attributes:
+      label: GHSA
+      description: Se la vulnerabilità ha un numero GHSA associato, inseriscilo qui.
+      placeholder: "Numero GHSA"
+
+  - type: textarea
+    id: contesto_aggiuntivo
+    attributes:
+      label: Contesto Aggiuntivo
+      description: Aggiungi qui qualsiasi altro contesto utile o informazioni aggiuntive sulla vulnerabilità.
+      placeholder: "Ulteriori informazioni sulla vulnerabilità"
+
+  - type: textarea
+    id: altre_note
+    attributes:
+      label: Altre note di carattere generale
+      description: Indica qualsiasi nota di carattere generale.
+      placeholder: "Note generali"
